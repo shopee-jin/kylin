@@ -31,6 +31,8 @@ source ${dir}/check-env.sh
 mkdir -p ${KYLIN_HOME}/logs
 mkdir -p ${KYLIN_HOME}/ext
 
+source ${dir}/set-java-home.sh
+
 function retrieveDependency() {
     #retrive $hive_dependency and $hbase_dependency
     source ${dir}/find-hive-dependency.sh
